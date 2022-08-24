@@ -2,7 +2,7 @@ const Blockfrost = require("@blockfrost/blockfrost-js");
 // import { BlockFrostAPI } from '@blockfrost/blockfrost-js'; // using import syntax
 
 const API = new Blockfrost.BlockFrostAPI({
-  projectId: "mainnetaDjfYeFpWDLijhepv0UPxPoVu71t5dV1", // see: https://blockfrost.io
+  projectId: "YOURAPIKEYHERE", // see: https://blockfrost.io
 });
 
 const VERITREE_TOKEN_POLICYID = "f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add5665726974726565546f6b656e";
