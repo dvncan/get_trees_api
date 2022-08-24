@@ -1,0 +1,112 @@
+[
+  {
+    unit: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363832',
+    quantity: '1'
+  },
+  {
+    unit: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363837',
+    quantity: '1'
+  },
+  {
+    unit: 'f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add5665726974726565546f6b656e',
+    quantity: '8092'
+  }
+]
+Comparing 56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c /****/ 56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c
+******************MATCH******************
+{
+  asset: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363832',
+  policy_id: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c',
+  asset_name: '445230363832',
+  fingerprint: 'asset18y8w3nj4njwdhajr3tzvf3vv2ntr3lw53pq7j7',
+  quantity: '1',
+  initial_mint_tx_hash: '3bf49e96b36ba4a0f28537c51763c042d9ea02357dc14265d3854509a283dffb',
+  mint_or_burn_count: 1,
+  onchain_metadata: {
+    name: 'Donation Record',
+    image: 'ipfs://QmcaRZfnddHtdX53bZz7Zu2MUZbpK4swBhPHY6G9jjVf98',
+    mediaType: 'image/png',
+    'Planting Site': {
+      ID: '00033',
+      Name: 'Mtwapa Creek',
+      Type: 'Mangrove',
+      Details: 'https://arweave.net/Ox1kIX8r8S9ZbKjGusVPiUMOTtZgVM5buZQTFXJd284',
+      Latitude: '-3.9018096',
+      Longitude: '39.709641'
+    },
+    'Trees Planted': '325',
+    'Cardano Forest Wallet': 'stake1u8a4yj2hyxqlukp349sa8guz6jg9l5fd0sjxcvfd3usfy7qczrgjn'
+  },
+  metadata: null
+}
+{
+  ID: '00033',
+  Name: 'Mtwapa Creek',
+  Type: 'Mangrove',
+  Details: 'https://arweave.net/Ox1kIX8r8S9ZbKjGusVPiUMOTtZgVM5buZQTFXJd284',
+  Latitude: '-3.9018096',
+  Longitude: '39.709641'
+}
+325 added to list
+{
+  plantingSite: 'Mtwapa Creek',
+  treesPlanted: 325,
+  treesGPS: 'Longitude: 39.709641 & Latitude: -3.9018096'
+}
+Comparing 56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c /****/ 56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c
+******************MATCH******************
+{
+  asset: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363837',
+  policy_id: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c',
+  asset_name: '445230363837',
+  fingerprint: 'asset1gkycvet3psdwsfdq8sxn4nwv8wsqhdksld9pup',
+  quantity: '1',
+  initial_mint_tx_hash: '43b1c27f6ab7ca138ee00779aa7c4bc07558c7d5f9fc2f6b5cd161d4e9103c1d',
+  mint_or_burn_count: 1,
+  onchain_metadata: {
+    name: 'Donation Record',
+    image: 'ipfs://QmQdfAf7pQNX24dYN31tyeCwNxmMKtXUYtcqZjY5YySkut',
+    mediaType: 'image/png',
+    'Planting Site': {
+      ID: '00033',
+      Name: 'Mtwapa Creek',
+      Type: 'Mangrove',
+      Details: 'https://arweave.net/Ox1kIX8r8S9ZbKjGusVPiUMOTtZgVM5buZQTFXJd284',
+      Latitude: '-3.9018096',
+      Longitude: '39.709641'
+    },
+    'Trees Planted': '225',
+    'Cardano Forest Wallet': 'stake1u8a4yj2hyxqlukp349sa8guz6jg9l5fd0sjxcvfd3usfy7qczrgjn'
+  },
+  metadata: null
+}
+{
+  ID: '00033',
+  Name: 'Mtwapa Creek',
+  Type: 'Mangrove',
+  Details: 'https://arweave.net/Ox1kIX8r8S9ZbKjGusVPiUMOTtZgVM5buZQTFXJd284',
+  Latitude: '-3.9018096',
+  Longitude: '39.709641'
+}
+225 added to list
+{
+  plantingSite: 'Mtwapa Creek',
+  treesPlanted: 225,
+  treesGPS: 'Longitude: 39.709641 & Latitude: -3.9018096'
+}
+Comparing 56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c /****/ f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add
+56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c != f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add
+Total Trees = 550
+2
+***************DONATION RECORD************************
+Planting Site: Mtwapa Creek
+Number of trees: 325
+Planting Location: Longitude: 39.709641 & Latitude: -3.9018096
+******************************************************
+
+***************DONATION RECORD************************
+Planting Site: Mtwapa Creek
+Number of trees: 225
+Planting Location: Longitude: 39.709641 & Latitude: -3.9018096
+******************************************************
+
