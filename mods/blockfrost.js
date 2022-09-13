@@ -1,8 +1,9 @@
+require('dotenv').config();
 const Blockfrost = require("@blockfrost/blockfrost-js");
 // import { BlockFrostAPI } from '@blockfrost/blockfrost-js'; // using import syntax
 
 const API = new Blockfrost.BlockFrostAPI({
-  projectId: "mainnetaDjfYeFpWDLijhepv0UPxPoVu71t5dV1", // see: https://blockfrost.io
+  projectId: process.env.projectId // see: https://blockfrost.io
 });
 
 const VERITREE_TOKEN_POLICYID = "f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add5665726974726565546f6b656e";
@@ -61,10 +62,11 @@ async function assetId_info_test(){
     }
 }
 
+// allAddressAssetUtxo('')
 
 async function allAddressAssetUtxo(address, asset){
     try{
-        const data = await API.addressesUtxosAssetAll;
+        const data = await API.addressesUtxosAssetAll(address, asset);
         //console.log(data);
         return data;
     }catch(err){
@@ -76,6 +78,15 @@ async function latestBlock(){
     try{
         const data = await API.blocksLatest();
         //console.log(data);
+        return data;
+    }catch(err){
+        console.log(err);
+    }
+}
+
+async function getAssetByAssetID(assetId){
+    try{
+        const data = await Blockfrost.parseAsset(assetId);
         return data;
     }catch(err){
         console.log(err);
@@ -104,10 +115,13 @@ async function runExample() {
   }
 }
 
+// runExample();
+
+
 
 //get_trees(VERITREE_TEST_STAKEID);
 
 //assetId_info_test();
 //stakeId_assets_test();
 //get_trees(VERITREE_TEST_STAKEID);
-module.exports = {runExample, assetId_info, stakeId_assets, latestBlock, assetId_info_test, stakeId_assets_test, stakeId_addresses, allAddressAssetUtxo};
+module.exports = {runExample, getAssetByAssetID, assetId_info, stakeId_assets, latestBlock, assetId_info_test, stakeId_assets_test, stakeId_addresses, allAddressAssetUtxo};
