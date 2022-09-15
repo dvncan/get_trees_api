@@ -10,6 +10,7 @@
     "axios": "^0.27.2",
     "cardano-connect": "^2.0.2",
     "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dev-logger": "^0.1.2",
     "discord.js": "^14.3.0",
