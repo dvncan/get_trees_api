@@ -6,9 +6,6 @@ const API = new Blockfrost.BlockFrostAPI({
   projectId: "mainnetaDjfYeFpWDLijhepv0UPxPoVu71t5dV1" // see: https://blockfrost.io
 });
 
-const VERITREE_TOKEN_POLICYID = "f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add5665726974726565546f6b656e";
-const VERITREE_DONATION_POLICYID = "56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c";
-const VERITREE_TEST_STAKEID = "stake1u97ez423f87gz7x7vulcxwh702vzqwwa0ldlh6gurf6mjss73y8p7";
 
 async function stakeId_addresses(stakeId){
     try{
@@ -17,6 +14,7 @@ async function stakeId_addresses(stakeId){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -27,6 +25,7 @@ async function stakeId_assets(stakeId){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -37,6 +36,7 @@ async function stakeId_assets_test(){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -47,6 +47,7 @@ async function assetId_info(assetId){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -59,6 +60,7 @@ async function assetId_info_test(){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -71,6 +73,7 @@ async function allAddressAssetUtxo(address, asset){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -81,6 +84,7 @@ async function latestBlock(){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -90,6 +94,7 @@ async function getAssetByAssetID(assetId){
         return data;
     }catch(err){
         console.log(err);
+        return err;
     }
 }
 
@@ -112,6 +117,7 @@ async function runExample() {
     console.log("health", health);
   } catch (err) {
     console.log("error", err);
+    return err;
   }
 }
 
