@@ -36,9 +36,11 @@ async function get_trees(stakeId) {
                 
                 let trees = parseInt(data2.onchain_metadata['Trees Planted']);
                 let plantingSite = data2.onchain_metadata['Planting Site'];
+                let assetId = data2.asset;
                 console.log(plantingSite);
                 console.log(trees + " added to list");
                 let treeObj = {
+                    assetId: assetId,
                     plantingSite: plantingSite.Name,
                     treesPlanted: trees,
                     treesGPS: "Longitude: " + plantingSite.Longitude + " & Latitude: " + plantingSite.Latitude
@@ -59,11 +61,11 @@ async function get_trees(stakeId) {
             console.log("Planting Location: " + element.treesGPS);
             console.log("******************************************************\n");
         }));
-        if (treesTotal===0){
-            treeList.push({totalTrees: 0});
-        }else{
-            treeList.push({totalTrees: treesTotal})
-        }
+        // if (treesTotal===0){
+        //     treeList.push({totalTrees: 0});
+        // }else{
+        //     treeList.push({totalTrees: treesTotal})
+        // }
         return treeList;
     }catch(err){
         console.log("here" + err);
@@ -73,3 +75,5 @@ async function get_trees(stakeId) {
 //get_trees(VERITREE_TEST_STAKEID);
 
 module.exports = {get_trees}
+
+// get_trees();
