@@ -33,7 +33,7 @@ async function get_trees(stakeId) {
                 treesTotal += trees;*/
                 console.log("******************MATCH******************")
                 let data2 = await blockfrost.assetId_info(res);
-                
+                console.log(data2)
                 let trees = parseInt(data2.onchain_metadata['Trees Planted']);
                 let plantingSite = data2.onchain_metadata['Planting Site'];
                 let assetId = data2.asset;
@@ -76,4 +76,4 @@ async function get_trees(stakeId) {
 
 module.exports = {get_trees}
 
-// get_trees();
+// get_trees("stake1u8a4yj2hyxqlukp349sa8guz6jg9l5fd0sjxcvfd3usfy7qczrgjn");

@@ -15,10 +15,8 @@ router.post('/', async (req, res)=>{
   console.log(req.body.id);
   const stakeId = req.body.id;
   const treeList = await nftree.get_trees(stakeId);
-  res.send(JSON.stringify(treeList)).status(200);
-  
-  //res.send(treeList).status(200);
-  
+  console.log(treeList);
+  res.send((treeList)).status(200);  
 })
 
 module.exports = router;

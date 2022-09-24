@@ -25,23 +25,23 @@ test("Test StakeID_addresses // may fail bc test is centered around hard code ad
     expect(data[0].address).toStrictEqual("addr1qxp02aqzw9j0nmk55fk738j97d5cnms0a92xwedvqtfqs4raj924zj0us9udueelsva0u75cyqua6l7ml053cxn4h9pqqn7dp5");
 })
 
-test("Test stakeID-> asset response",async ()=>{
+// test("Test stakeID-> asset response",async ()=>{
 
-    var data = await blockfrost.stakeId_assets(VERITREE_TEST_STAKEID);
+//     var data = await blockfrost.stakeId_assets(VERITREE_TEST_STAKEID);
 
-    var out = [
-        {
-          unit: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363832',
-          quantity: '1'
-        },
-        {
-          unit: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363837',
-          quantity: '1'
-        },
-        {
-          unit: 'f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add5665726974726565546f6b656e',
-          quantity: '8092'
-        }
-    ]
-    expect(data).toStrictEqual(out);
-});
+//     var out = [
+//         {
+//           unit: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363832',
+//           quantity: '1'
+//         },
+//         {
+//           unit: '56b10a2a34fa7be327f28958cbb794c649986f4cf4a1d7da065dfd7c445230363837',
+//           quantity: '1'
+//         },
+//         {
+//           unit: 'f7c777fdd4531cf1c477551360e45b9684073c05c2fa61334f8f9add5665726974726565546f6b656e',
+//           quantity: '8092'
+//         }
+//     ]
+//     expect(data).toBe(out);
+// });
